@@ -1,7 +1,8 @@
 
-CNNベースでの視線領域推定．
+"Estimation of the region of the vision derection using CNN."
 
-左右の目から視線方向の特徴量を抽出．
-顔画像のテクスチャ及び顔の座標・幅から頭部位置・姿勢の特徴量を抽出．座標と顔の幅は一度全結合層を通す．
+Extract the features of the vision derection by the images of right and left eyes.
+Extract the head position and posture by the textures of the face image and the coordenates and the size of the face.
 
-最後にconcatして全結合層で推論．
+Make these feature maps 1-dementional and concatenate them.
+For the cancatenated features, infer by full-connection layers.
